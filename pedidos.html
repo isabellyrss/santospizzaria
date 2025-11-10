@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Pedidos · Pizza Santos</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">
+        <img src="https://copilot.microsoft.com/th/id/BCO.ad94b252-55e0-4764-9c45-5aa71edaa5a4.png" alt="Logo Pizza Santos" class="logo">
+        <span class="brand-name">Pizza Santos</span>
+      </a>
+      <nav class="main-nav">
+        <a href="pedidos.html">Pedidos</a>
+        <a href="rodizio.html">Rodízio</a>
+        <a href="locacao.html">Locação</a>
+        <a href="galeria.html">Galeria</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Faça seu Pedido</h1>
+
+    <section class="menu-grid">
+      <!-- Categoria Pizzas Tradicionais -->
+      <div class="menu-category">
+        <h2>Pizzas Tradicionais</h2>
+        <div class="menu-item">
+          <div>
+            <h3>Margherita</h3>
+            <p>Molho de tomate, muçarela, manjericão.</p>
+          </div>
+          <div class="menu-meta">
+            <span class="price">R$ 35,00</span>
+            <button class="btn add-btn" data-name="Margherita" data-price="35.00">Adicionar</button>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <div>
+            <h3>Calabresa</h3>
+            <p>Muçarela, calabresa fatiada, cebola.</p>
+          </div>
+          <div class="menu-meta">
+            <span class="price">R$ 38,00</span>
+            <button class="btn add-btn" data-name="Calabresa" data-price="38.00">Adicionar</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Categoria Pizzas Especiais -->
+      <div class="menu-category">
+        <h2>Pizzas Especiais</h2>
+        <div class="menu-item">
+          <div>
+            <h3>Portuguesa</h3>
+            <p>Presunto, ervilha, ovo, cebola, muçarela.</p>
+          </div>
+          <div class="menu-meta">
+            <span class="price">R$ 45,00</span>
+            <button class="btn add-btn" data-name="Portuguesa" data-price="45.00">Adicionar</button>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <div>
+            <h3>4 Queijos</h3>
+            <p>Muçarela, gorgonzola, parmesão e catupiry.</p>
+          </div>
+          <div class="menu-meta">
+            <span class="price">R$ 48,00</span>
+            <button class="btn add-btn" data-name="4 Queijos" data-price="48.00">Adicionar</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bebidas -->
+      <div class="menu-category">
+        <h2>Bebidas</h2>
+        <div class="menu-item">
+          <div>
+            <h3>Refrigerante 2L</h3>
+            <p>Escolha o sabor.</p>
+          </div>
+          <div class="menu-meta">
+            <span class="price">R$ 12,00</span>
+            <button class="btn add-btn" data-name="Refrigerante 2L" data-price="12.00">Adicionar</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <aside class="cart">
+      <h2>Carrinho</h2>
+      <div id="cartItems">Nenhum item adicionado.</div>
+      <div class="cart-summary">
+        <div>Entrega: <span id="deliveryFee">R$ 8,00</span></div>
+        <div>Total: <strong id="cartTotal">R$ 0,00</strong></div>
+      </div>
+
+      <form id="orderForm" class="checkout-form">
+        <h3>Finalizar Pedido</h3>
+        <label>Nome completo
+          <input type="text" name="name" required>
+        </label>
+
+        <label>Telefone
+          <input type="tel" name="phone" required>
+        </label>
+
+        <label>Endereço (se delivery)
+          <textarea name="address" rows="2"></textarea>
+        </label>
+
+        <label>
+          <input type="radio" name="method" value="pickup" checked> Retirada
+        </label>
+        <label>
+          <input type="radio" name="method" value="delivery"> Delivery
+        </label>
+
+        <label>Pagamento
+          <select name="payment">
+            <option value="cash">Dinheiro</option>
+            <option value="card_local">Cartão no local</option>
+            <option value="card_online">Cartão online</option>
+          </select>
+        </label>
+
+        <button type="submit" class="btn">Enviar pedido</button>
+      </form>
+    </aside>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div><strong>Pizza Santos</strong><p>Av. Das Pizzas, 123 — Curitiba, PR</p></div>
+      <div><strong>Contato</strong><p>Telefone: (41) 9XXXX-XXXX</p></div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Locação de Espaço · Pizza Santos</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">
+        <img src="https://copilot.microsoft.com/th/id/BCO.ad94b252-55e0-4764-9c45-5aa71edaa5a4.png" alt="Logo Pizza Santos" class="logo">
+        <span class="brand-name">Pizza Santos</span>
+      </a>
+      <nav class="main-nav">
+        <a href="pedidos.html">Pedidos</a>
+        <a href="rodizio.html">Rodízio</a>
+        <a href="locacao.html">Locação</a>
+        <a href="galeria.html">Galeria</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Locação de Espaço para Eventos</h1>
+    <p>Oferecemos um espaço aconchegante para aniversários, confraternizações e eventos corporativos.</p>
+
+    <section class="packages">
+      <h2>Pacotes</h2>
+      <div class="package-grid">
+        <div class="package">
+          <h3>Básico</h3>
+          <p>Aluguel do espaço por 4h; mesas e cadeiras; limpeza.</p>
+          <p class="price">R$ 400,00</p>
+        </div>
+        <div class="package">
+          <h3>Completo</h3>
+          <p>Inclui buffet de pizzas, 1 garçom, decoração básica.</p>
+          <p class="price">R$ 1.200,00</p>
+        </div>
+        <div class="package">
+          <h3>Premium</h3>
+          <p>Menu personalizado, equipe completa, bebidas inclusas.</p>
+          <p class="price">Sob consulta</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="booking">
+      <h2>Solicitar Orçamento / Reserva</h2>
+      <form id="bookingForm" class="reserve-form">
+        <label>Nome
+          <input name="name" required>
+        </label>
+        <label>Telefone
+          <input name="phone" required>
+        </label>
+        <label>E-mail
+          <input type="email" name="email" required>
+        </label>
+        <label>Data desejada
+          <input type="date" name="date" required>
+        </label>
+        <label>Horário
+          <input type="time" name="time" required>
+        </label>
+        <label>Número de convidados
+          <input type="number" name="guests" min="1" required>
+        </label>
+        <label>Pacote
+          <select name="package">
+            <option value="basico">Básico</option>
+            <option value="completo">Completo</option>
+            <option value="premium">Premium</option>
+          </select>
+        </label>
+        <label>Mensagem
+          <textarea name="message" rows="3"></textarea>
+        </label>
+        <button type="submit" class="btn">Enviar solicitação</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div><strong>Pizza Santos</strong><p>Av. Das Pizzas, 123 — Curitiba, PR</p></div>
+      <div><strong>Contato</strong><p>Telefone: (41) 9XXXX-XXXX</p></div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
